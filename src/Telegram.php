@@ -66,4 +66,20 @@ class Telegram extends Api
         $this->easy = new EasyVars($update);
         return $update;
     }
+
+    public function debug($chat_id, ...$vars): bool
+    {
+        foreach ($vars as $debug) {
+            $str = var_export($debug, true);
+            $array_str = str_split($str, 4050);
+
+            foreach ($array_str as $value) {
+                $result = $this->sendMessage($chat_id, "Debug:" . PHP_EOL . $value);
+                if ($result->ok === false) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 }

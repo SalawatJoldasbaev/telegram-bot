@@ -6,7 +6,9 @@ use Telegram\Telegram;
 const TOKEN = "BOT_TOKEN";
 
 $bot = new Telegram(TOKEN);
+
 $update = $bot->getUpdate();
+
 if (!isset($update)) {
     exit('json error');
 }
