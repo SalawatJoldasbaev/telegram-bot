@@ -1,0 +1,22 @@
+{
+    "name": "salawat/telegram",
+    "description": "A simple way to communicate with Telegram APIs in PHP.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "ext-json": "*",
+        "ext-curl": "*",
+        "php": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Telegram\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "salawatme",
+            "email": "me@salawat.com"
+        }
+    ]
+}
