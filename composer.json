@@ -1,7 +1,7 @@
 {
-    "name": "salawat/telegram",
+    "name": "salawatme/telegram-bot",
     "description": "A simple way to communicate with Telegram APIs in PHP.",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "require": {
         "ext-json": "*",
