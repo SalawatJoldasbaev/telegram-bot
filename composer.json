@@ -3,6 +3,7 @@
     "description": "A simple way to communicate with Telegram APIs in PHP.",
     "type": "library",
     "license": "MIT",
+    "minimum-stability": "stable",
     "require": {
         "ext-json": "*",
         "ext-curl": "*",
